@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="CSS/formulario.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <header>
+        <h1>Formulario</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <a href="index.html">Inicio</a>
+            <a href="curriculum.html">Currículum</a>
+            <a href="formulario.html">Formulario</a>
+            <a href="about.html">Sobre el proyecto</a>
+        </ul>
+    </nav>
+    <section>
+        <div class="barra-izquierda">
+            <h1 class="bar">=</h1>
+            <h3>Social Media</h3>
+            <p><a href="https://www.instagram.com/">Instagram</a></p>
+            <p><a href="https://twitter.com/?lang=es">Twitter</a></p>
+            <p><a href="https://open.spotify.com/intl-es">Spotify</a></p>
+            <p><a href="https://discord.com/">Discord</a></p>
+        </div>
+    </section>
+
+
+<form>
+    <h1>Información personal</h1>
+    <form action="ejemplo.php" method="get">
+    <p>Apellidos: <input type="text" name="nombre" size="40" required></p>
+    <p>Nombre: <input type="text" name="nombre" size="40" required></p>
+    <p>Fecha de nacimiento: <input type="date" name="nacido" required></p>
+    <p>Sexo:
+      <input type="radio" name="hm" value="h" required> Hombre
+      <input type="radio" name="hm" value="m" required> Mujer
+      <input type="radio" name="hm" value="u" required> Otro
+    </p>
+    <p>Numero de telefono: <input type="tel" name="telefono" placeholder="Teléfono móvil"> </p>
+    <p><input type="submit" value="Enviar"></p>
+</form> 
+
+<form>
+    <h1>Registro</h1>
+    <form action="ejemplo.php" method="get">
+    <p>Usuario: <input type="text" name="nombre" size="40" required></p>
+    <p>E-Mail: <input type="email" name="nombre" size="40" required></p>
+    <p>Contraseña: <input type="password" name="nacido" required></p>
+    <p><input type="submit" value="Enviar"></p>
+</form>  
+
+<form>
+    <h1>Opcional</h1>
+    <form action="ejemplo.php" method="get">
+
+
+        <p>Color favorito <input type="color" name="colorElegido"></p>
+        <p>
+            Indique su nivel de ingles (Bajo, Intermedio, Alto):
+            <input type="range" name="rango" min="1" max="3" list="lista-rango">
+            <datalist id="lista-rango">
+              <option value="1" label="Bajo"></option>
+              <option value="2" label="Medio"></option>
+              <option value="3" label="Alto"></option>
+        </p>
+        <label>Idiomas:</label>
+        <input type="checkbox" id="idioma1" name="Idioma1" value="Inglés"><label for="idioma1">Inglés</label>
+        <input type="checkbox" id="idioma2" name="Idioma2" value="Francés"><label for="idioma2">Francés</label>
+        <input type="checkbox" id="idioma3" name="Idioma3" value="Alemán"><label for="idioma3">Alemán</label>
+        <input type="checkbox" id="idioma4" name="Idioma4" value="Catalán"><label for="idioma4">Catalán</label>
+        <input type="checkbox" id="idioma5" name="Idioma5" value="Otro"><label for="idioma5">Otro: </label><input type="text" placeholder="Escriba otro idioma">
+        <p> Estado civil
+        <select name="menu"> 
+        <option value="0">...</option>
+        <option value="1">Soltero/a</option>
+        <option value="2">Casado/a</option>
+        <option value="3">Viudo/a</option>
+        <option value="4">Otro</option>
+        </select>
+        </p>
+        <p><input type="submit" value="Enviar"></p>
+    </form>
+
+</form>  
+    
+
+    <footer>Pagina diseñada por <a href="aitor.dominguez@educa.madrid.org">aitor.dominguez@educa.madrid.org</a></footer>
+    
+</body>
+</html>
